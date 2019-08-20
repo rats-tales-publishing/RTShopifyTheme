@@ -1,0 +1,176 @@
+/* Fonts
+ * ----------------------------------------------
+ */
+@font-face {
+    font-family: 'Futura Std Light';
+    src: url('../fonts/FuturaStd-Light.woff2') format('woff2'),
+         url('../fonts/FuturaStd-Light.woff') format('woff'),
+         url('../fonts/FuturaStd-Light.ttf') format('ttf'),
+         url('../fonts/FuturaStd-Light.otf') format('otf'),
+         url('../fonts/FuturaStd-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura Std Book';
+    src: url('../fonts/FuturaStd-Book.woff2') format('woff2'),
+         url('../fonts/FuturaStd-Book.woff') format('woff'),
+         url('../fonts/FuturaStd-Book.ttf') format('ttf'),
+         url('../fonts/FuturaStd-Book.otf') format('otf'),
+         url('../fonts/FuturaStd-Book.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('BaskervilleMTStd-Italic.eot');
+    src: url('BaskervilleMTStd-Italic.eot?#iefix') format('embedded-opentype'),
+        url('BaskervilleMTStd-Italic.woff2') format('woff2'),
+        url('BaskervilleMTStd-Italic.woff') format('woff'),
+        url('BaskervilleMTStd-Italic.ttf') format('truetype'),
+        url('BaskervilleMTStd-Italic.svg#BaskervilleMTStd-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('BaskervilleMTStd-Regular.eot');
+    src: url('BaskervilleMTStd-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BaskervilleMTStd-Regular.woff2') format('woff2'),
+        url('BaskervilleMTStd-Regular.woff') format('woff'),
+        url('BaskervilleMTStd-Regular.ttf') format('truetype'),
+        url('BaskervilleMTStd-Regular.svg#BaskervilleMTStd-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+h1, h1 a, #main-menu a, .col-1-of-3 a, button a {
+  font-family: 'Baskerville MT Std', Baskerville, 'Libre Baskerville', serif;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#main-menu a, .col-1-of-3 a, button a {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+h1, h1 a {
+  font-size: 30px;
+  line-height: 28px;
+}
+
+h2, h2 a, h3, h3 a {
+  font-family: 'Baskerville MT Std', Baskerville, 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h2, h2 a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+p {
+  font-family: 'Futura Std Light', Futura, sans-serif;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+#util-menu a {
+  font-family: 'Futura Std Book', Futura, sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}  
+
+/* Colours
+ * ----------------------------------------------
+ */
+h1, h1 a, h2, h2 a, h3, h3 a, .content a, .header a, ul a, .col-1-of-3 a {
+  color: #141213;
+}
+
+p {
+  color: #24261e;
+}
+
+/* Layout
+ * ----------------------------------------------
+ */
+#logo-lg {
+  margin-top: -35px;
+}
+
+/* Navigation */
+
+#util-menu-lg {
+  margin-top: -50px;
+}
+
+#util-menu-lg ul li {
+	min-width: 40px;
+}
+
+#main-menu {
+	height: 60px;
+}
+
+#main-menu-lg ul li {
+  text-align: right;
+  min-width: 50px;
+}
+
+
+/* Design elements
+ * ----------------------------------------------
+ */
+ 
+/* template */
+body {
+	background: url('../img/bg.png') repeat;
+}
+
+.underline-div:after {
+	width: 100%;
+	padding-top:10px;
+	display: block;
+	box-sizing: content-box;
+	border-bottom: 1px solid #24261e;
+	content:"";
+}
+
+.underline-heading:after {
+	width: 40%;
+	margin: 0 auto;
+	padding-top: 20px;
+	display: block;
+	box-sizing: content-box;
+	border-bottom: 1px solid #24261e;
+	content:"";
+}
+
+#projects img {
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -30px;
+}
+
+/* homepage */
+
+@media screen and (min-width: 1024px) {
+  #welcome {
+    margin-left: -100px;
+  }
+}
+
