@@ -1,5 +1,14 @@
-<ul>
-  {% for article in blog.articles %}
-  <li><a href="{{ article.url }}">{{ article.title }}</a></li>
-  {% endfor %}
-</ul>
+<div class="container">
+    <div class="row">
+      <ul class="simple-list">
+        {% for article in blog.articles %}
+        <li>
+          <h5><a href="{{ article.url }}">{{ article.title }}</a></h5>
+          <p class="text-right">{{ article.published_at | date: '%d %B %Y' }}</p>
+          <p class="text-justify">{{ article.excerpt }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+</div>
+

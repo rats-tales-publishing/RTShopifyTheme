@@ -1,6 +1,10 @@
-<h2>{{ product.title }}</h2>
-{{ product.description }}
-<form action="/cart/add" method="post" enctype="multipart/form-data">
+<div class="container">
+  <div class="row">
+      <h2 class="text-center">{{ product.title }}</h2>
+  </div>
+  <div class="row">
+  {{ product.description }}
+  <form action="/cart/add" method="post" enctype="multipart/form-data">
     <select name="id">
         {% for variant in product.variants %}
         {% if variant.available == true %}
@@ -11,4 +15,6 @@
         {% endfor %}
     </select>
     <input type="submit" name="add" id="add" value="Add to Cart" class="button">
-</form>
+  </form>
+  </div>
+</div>
