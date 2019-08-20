@@ -1,0 +1,46 @@
+<div id="header" class="container">
+    <div class="row">
+      <div id="util-menu">
+        <div id="util-menu-lg" class="hide-xs hide-sm right">
+        <ul class="menu">
+          <!-- li><a href="/login"><img src="{{ 'login.png' | asset_url }}"> log in</a></li -->
+          <li><a href="/cart"><img src="{{ 'cart.png' | asset_url }}"> cart: {{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }} ({{ cart.total_price | money }})</a></li>
+          <li>
+          {% include 'search-form' %}
+          </li>
+        </ul>
+        </div>
+        <div id="util-menu-sm" class="hide-md hide-lg hide-xl right">
+        <ul class="menu">
+          <!-- li><a href="/login"><img src="{{ 'login.png' | asset_url }}"> </a></li -->
+          <li><a href="/cart"><img src="{{ 'cart.png' | asset_url }}"> {{ cart.total_price | money }}</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+      
+    <div class="row underline-div">
+      <div id="logo">
+        <h1 class="hide"><a href="/">{{ shop.name }}</a></h1>
+        <div id="logo-lg" class="hide-xs hide-sm left">
+          <a href="/" alt ="{{ shop.name }}"><img src="{{ 'logo.png' | asset_url }}"></a>
+        </div>
+        <div id="logo-sm" class="hide-md hide-lg hide-xl full-width">
+          <a href="/" alt ="{{ shop.name }}"><img src="{{ 'logo.png' | asset_url }}" class="center"></a>
+        </div>
+      </div>
+      
+      <div id="main-menu">
+        <div id="main-menu-lg" class="hide-xs hide-sm right">
+          <ul class="menu">
+            {% for link in linklists.main-menu.links %}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div id="main-menu-sm" class="hide-md hide-lg hide-xl">
+          TODO:
+        </div>
+      </div>
+    </div>
+</div>
